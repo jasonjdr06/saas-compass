@@ -1,0 +1,52 @@
+baseURL: "https://saascompass.co/"
+languageCode: "en-us"
+title: "SaaS Compass"
+theme: "PaperMod"
+paginate: 10
+
+params:
+  env: production
+  title: SaaS Compass
+  description: "Navigate the SaaS landscape with confidence. Independent reviews of CRM, email marketing, and business software."
+  keywords: [SaaS reviews, CRM comparison, email marketing software, business tools 2026]
+  author: SaaS Compass Team
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: "Your guide to the best business software"
+    Content: "Unbiased reviews and comparisons of CRM, email marketing, and SaaS tools — helping you choose with confidence."
+
+  socialIcons:
+    - name: "rss"
+      url: "/index.xml"
+
+menu:
+  main:
+    - identifier: crm
+      name: CRM
+      url: /tags/crm/
+      weight: 10
+    - identifier: email
+      name: Email Marketing
+      url: /tags/email-marketing/
+      weight: 20
+    - identifier: reviews
+      name: All Reviews
+      url: /categories/review/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
