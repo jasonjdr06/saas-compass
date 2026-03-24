@@ -8,8 +8,8 @@ pagination:
 params:
   env: production
   title: SaaS Compass
-  description: "Navigate the SaaS landscape with confidence. Independent reviews of CRM, email marketing, and business software."
-  keywords: [SaaS reviews, CRM comparison, email marketing software, business tools 2026]
+  description: "Independent reviews of CRM, email marketing, HR, and business SaaS tools. Cut through the noise and choose the right software."
+  keywords: [SaaS reviews 2026, best CRM, email marketing software, project management tools, business software comparison]
   author: SaaS Compass Team
   defaultTheme: auto
   ShowReadingTime: true
@@ -17,10 +17,14 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowToc: true
+  TocOpen: false
+  ShowCodeCopyButtons: true
 
   homeInfoParams:
-    Title: "Your guide to the best business software"
-    Content: "Unbiased reviews and comparisons of CRM, email marketing, and SaaS tools — helping you choose with confidence."
+    Title: "Stop guessing. Start with the right SaaS."
+    Content: >
+      Independent, hands-on reviews of business software — CRM, email marketing,
+      HR tools, and more. No sponsored placements. Just honest comparisons for 2026.
 
   socialIcons:
     - name: "rss"
@@ -36,10 +40,14 @@ menu:
       name: Email Marketing
       url: /tags/email-marketing/
       weight: 20
+    - identifier: pm
+      name: Project Mgmt
+      url: /tags/project-management/
+      weight: 30
     - identifier: reviews
       name: All Reviews
       url: /categories/review/
-      weight: 30
+      weight: 40
 
 outputs:
   home:

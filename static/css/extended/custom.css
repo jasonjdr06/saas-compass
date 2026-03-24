@@ -1,0 +1,129 @@
+/* SaaS Compass — Custom Styles */
+
+:root {
+  --primary: #8b5cf6;
+  --primary-dark: #7c3aed;
+  --accent: #10b981;
+  --text-primary: #1e1b4b;
+  --text-secondary: #6b7280;
+  --bg-card: #faf9ff;
+  --border: #e8e5f0;
+  --radius: 10px;
+}
+
+/* Typography */
+body {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.post-content h2 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+.post-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+/* Rating display */
+.post-content strong {
+  color: var(--text-primary);
+}
+
+/* Comparison tables */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(139,92,246,0.1);
+}
+
+.post-content table th {
+  background: var(--primary);
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.post-content table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-content table tr:nth-child(even) td {
+  background: var(--bg-card);
+}
+
+.post-content table tr:last-child td {
+  border-bottom: none;
+}
+
+/* CTA affiliate buttons */
+.post-content p > a:last-child {
+  display: inline-block;
+  background: var(--primary);
+  color: white !important;
+  padding: 9px 20px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.post-content p > a:last-child:hover {
+  background: var(--primary-dark);
+}
+
+/* Section dividers */
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* Lists */
+.post-content ul li::marker {
+  color: var(--primary);
+}
+
+/* Homepage */
+.home-info-content {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 620px;
+}
+
+/* Post cards */
+.post-entry {
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: white;
+}
+
+.post-entry:hover {
+  box-shadow: 0 4px 20px rgba(139,92,246,0.15);
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .post-content table { font-size: 0.85rem; }
+  .post-content table th, .post-content table td { padding: 8px 10px; }
+}
