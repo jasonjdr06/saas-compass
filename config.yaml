@@ -2,7 +2,8 @@ baseURL: "https://saascompass.co/"
 languageCode: "en-us"
 title: "SaaS Compass"
 theme: "PaperMod"
-paginate: 10
+pagination:
+  pagerSize: 10
 
 params:
   env: production
